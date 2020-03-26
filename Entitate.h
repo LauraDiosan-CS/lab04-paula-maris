@@ -1,4 +1,5 @@
 #pragma once
+
 #include <ostream>
 using namespace std;
 
@@ -17,8 +18,8 @@ public:
 	int getSuma();
 	char* getTip();
 	char* getDesc();
-	void setTip(char* tip);
 	void setDesc(char* desc);
+	void setTip(char* tip);
 	void setSuma(int suma);
 	void setZiua(int ziua);
 	bool operator==(const Entitate&);

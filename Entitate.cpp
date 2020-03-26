@@ -35,16 +35,6 @@ Entitate::Entitate(const Entitate& s) {
 	this->ziua = s.ziua;
 }
 
-//destructor
-Entitate::~Entitate() {
-	if (tip) delete[]tip;
-	if (desc) delete[]desc;
-	tip = NULL;
-	desc = NULL;
-	ziua = -1;
-	suma = -1;
-}
-
 //getter pentru zi
 int Entitate::getZiua() {
 	return this->ziua;
@@ -62,6 +52,7 @@ int Entitate::getSuma() {
 
 //setter pentru suma
 void Entitate::setSuma(int sum) {
+	//suma = sum;
 	this->suma = sum;
 }
 
@@ -89,7 +80,17 @@ void Entitate::setDesc(char* d) {
 	strcpy_s(desc, strlen(d) + 1, d);
 }
 
-//suprascrie operatorul = pentru elem de tip Entitate
+//destructor
+Entitate::~Entitate() {
+	if (tip) delete[]tip;
+	tip = NULL;
+	if (desc) delete[]desc;
+	desc = NULL;
+	ziua = -1;
+	suma = -1;
+}
+
+//suprascrie operatorul "=" pentru un element de tip entitate
 Entitate& Entitate::operator=(const Entitate& s) {
 	this->setZiua(s.ziua);
 	this->setSuma(s.suma);
@@ -103,14 +104,32 @@ bool Entitate::operator==(const Entitate& s) {
 	return (ziua == s.ziua) && suma == s.suma && (strcmp(tip, s.tip) == 0) && (strcmp(desc, s.desc) == 0);
 }
 
-//afisare
+//afisarea1
 ostream& operator<<(ostream& os, const Entitate& s)
 {
-	os << "Ziua: " << s.ziua << ", suma: " << s.suma << ", tipul: " << s.tip << ", descrierea: "<< s.desc<< endl;
+	os << "Ziua: " << s.ziua << ", suma: " << s.suma << ", tipul: " << s.tip << ", descrierea: " << s.desc << endl;
 	return os;
 }
 
 //afisare2
 void Entitate::afisare() {
-	cout << "Ziua: " << this->ziua << ", suma: " << this->suma << ", tipul: " << this->tip << ", descrierea: "<<this->desc;
+	cout << "Ziua: " << this->ziua << ", suma: " << this->suma << ", tipul: " << this->tip << ", descrierea: " << this->desc;
+
 }
+/*
+std::ostream& operator<<(std::ostream& os,const floatArray& v)
+{
+	for(int i=0;i<v.mSize;i++)
+		cout<<v.mData[i];
+	return os;
+}
+std::istream& operator>>(std::istream& is,floatArray& v)
+{
+	for(int i=0;i<v.mSize;i++)
+	{
+		cout<<"["<<i<<"]="<<"\n";
+		cin>>v.mData[i];
+	}
+	return is;
+}
+*/
