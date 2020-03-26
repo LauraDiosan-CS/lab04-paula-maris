@@ -1,0 +1,11 @@
+﻿  Lab05.cpp
+D:\OOP (semestrul 2, Anul 1)\___EXERCITII REZOLVATE__\Lab05\Lab05.cpp(26,6): warning C4101: 'n': unreferenced local variable
+  Test.cpp
+  UI.cpp
+D:\OOP (semestrul 2, Anul 1)\___EXERCITII REZOLVATE__\Lab05\UI.cpp(96,20): warning C4018: '<': signed/unsigned mismatch
+D:\OOP (semestrul 2, Anul 1)\___EXERCITII REZOLVATE__\Lab05\UI.cpp(108,20): warning C4018: '<': signed/unsigned mismatch
+D:\OOP (semestrul 2, Anul 1)\___EXERCITII REZOLVATE__\Lab05\UI.cpp(196,20): warning C4018: '<': signed/unsigned mismatch
+D:\OOP (semestrul 2, Anul 1)\___EXERCITII REZOLVATE__\Lab05\UI.cpp(212,20): warning C4018: '<': signed/unsigned mismatch
+D:\OOP (semestrul 2, Anul 1)\___EXERCITII REZOLVATE__\Lab05\UI.cpp(227,20): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Lab05.vcxproj -> D:\OOP (semestrul 2, Anul 1)\___EXERCITII REZOLVATE__\Lab05\Debug\Lab05.exe
