@@ -1,6 +1,7 @@
 #include "Test.h"
 #include "Entitate.h"
 #include "Service.h"
+#include "UI.h"
 #include "RepositorySTL.h"
 #include <iostream>
 #include <cassert>
@@ -103,3 +104,38 @@ void test8()
 	serv.deleteElem(t1);
 	assert(serv.getSize() == 2);
 }
+
+void test9()
+{
+	Service serv;
+	UI u;
+	Entitate t(6, 400, "in", "banca");
+	Entitate t1(24, 1000, "out", "rata");
+	Entitate t2(23, 1000, "out", "calatorii");
+	Entitate t3(6, 1000, "out", "calatorii");
+	Entitate t4(7, 1000, "out", "calatorii");
+	serv.adauga(t);
+	serv.adauga(t1);
+	serv.adauga(t2);
+	serv.adauga(t3);
+	serv.adauga(t4);
+	assert(serv.getSize() == 5);
+	u.delete5_10(serv);
+	assert(serv.getSize() == 2);
+}
+
+void test10()
+{
+	Service serv;
+	UI u;
+	Entitate t(6, 400, "in", "banca");
+	Entitate t1(24, 1000, "out", "rata");
+	Entitate t2(23, 1000, "out", "calatorii");
+	serv.adauga(t);
+	serv.adauga(t1);
+	serv.adauga(t2);
+	assert(serv.getSize() == 3);
+	serv.undo();
+	assert(serv.getSize() == 2);
+}
+

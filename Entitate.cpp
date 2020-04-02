@@ -116,20 +116,3 @@ void Entitate::afisare() {
 	cout << "Ziua: " << this->ziua << ", suma: " << this->suma << ", tipul: " << this->tip << ", descrierea: " << this->desc;
 
 }
-/*
-std::ostream& operator<<(std::ostream& os,const floatArray& v)
-{
-	for(int i=0;i<v.mSize;i++)
-		cout<<v.mData[i];
-	return os;
-}
-std::istream& operator>>(std::istream& is,floatArray& v)
-{
-	for(int i=0;i<v.mSize;i++)
-	{
-		cout<<"["<<i<<"]="<<"\n";
-		cin>>v.mData[i];
-	}
-	return is;
-}
-*/

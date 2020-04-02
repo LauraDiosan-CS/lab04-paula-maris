@@ -23,3 +23,9 @@ void test7();
 
 //test pentru stergerea din service
 void test8();
+
+//test pentru stergerea tranzactiilor din intervalul de zile [5,10]
+void test9();
+
+//test pentru undo
+void test10();

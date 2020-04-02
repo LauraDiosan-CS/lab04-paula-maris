@@ -253,7 +253,6 @@ void UI::afisaremeniu()
 	cout << "4 - Afisarea tuturor cheltuielilor din tipul -in-\n";
 	cout << "5 - Stergerea tuturor tranzactiilor din ziua 5 pana in ziua 10\n";
 	cout << "6 - Afisarea sumei tuturor tranzactiilor de tipul -in-\n";
-	cout << "7 - Afisarea sumelor cheltuite intr-o zi data de la tastatura in ordine descrescatoare\n";
 	cout << "8 - Modifica tranzactiile din ziua 10 astfel: la descriere -> Salar, iar la suma -> 2000\n";
 	cout << "9 - Undo\n";
 	cout << "10 - Redo\n";

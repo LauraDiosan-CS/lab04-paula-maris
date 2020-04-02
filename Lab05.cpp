@@ -21,6 +21,8 @@ int main()
 	test6();
 	test7();
 	test8();
+	test9();
+	test10();
 	cout << "succes" << endl;
 
 	int n;
@@ -54,9 +56,6 @@ int main()
 		}
 		if (option == 6) {
 			u.afisareSumaIN(serv);							//afisarea sumei tranzactiilor de tipul IN
-		}
-		if (option == 7) {
-			//serv.max();
 		}
 		if (option == 8) {
 			u.modif_zi_10(serv);							//modificarea tranzactiilor din ziua 10
